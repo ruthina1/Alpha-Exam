@@ -1,0 +1,142 @@
+.containerR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+}
+.registartion-container{
+    border: 0.5px solid gainsboro;
+    border-radius: 19px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.registartion-container img{
+    height: 13vh;
+    width:7vw;
+    border-radius: 50%;
+    border:0.5px solid gainsboro
+}
+.stream{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+li{
+    list-style: none;
+}
+.fieldbtn{
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #44E5B2;
+    height: 5vh;
+    width: 300px;
+    font-size: 18px;
+}
+.fieldbtn.checked {
+  background-color: #44E5B2;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #2db795;
+}
+.done-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: not-allowed;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.done-btn.enabled{
+  background-color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .containerR {
+    margin-top: 0;
+    height: auto;
+    padding: 20px 0;
+    line-height: 22px;
+  }
+
+  .registartion-container {
+    width: 75%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .registartion-container img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .inp{
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .inp2{
+    display: flex;
+  }
+  .stream {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .fieldbtn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  ul.list1,
+  ul.list2,
+  ul.list3,
+  ul.list4 {
+    padding-left: 10px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  .done-btn {
+    width: 25%;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .registartion-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .fieldbtn {
+    font-size: 15px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+}
