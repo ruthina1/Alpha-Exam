@@ -1,0 +1,48 @@
+.containerS{
+    height: 100vh;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    background-color: rgb(241, 241, 241);
+}
+.sidebar-container{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sidebar-container button{
+  height: 6vh;
+  width: 238px;
+  border-radius: 2vh;
+  font-size: 17px;
+  padding: 10px 12px;
+  text-align: center;
+  color: white;
+  border: none;
+}
+.logout{
+    background-color: rgb(211, 54, 54);
+}
+.btns{
+    background-color: #44E5B2;
+}
+.btns:hover, .btns:active{
+    background-color: black;
+}
+.foot{
+    color:  #26ad83;
+    text-decoration: underline;
+}
+.containerS .logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  object-fit: cover;
+  margin-bottom: 15px;
+}

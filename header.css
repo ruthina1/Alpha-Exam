@@ -1,0 +1,25 @@
+.header-container {
+  position: relative;
+  width: 93%;           
+  height: 50px;  
+  margin-left: 5%;  
+  margin-top: 1%;      
+  background-color: #44E5B2;   
+  border-radius: 25px;    
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  box-sizing: border-box;
+}
+
+.header-container img {
+  position: absolute;
+  left: -25px;                
+  top: 50%;
+  transform: translateY(-50%); 
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid rgb(240, 245, 251);    
+  background: white;         
+}

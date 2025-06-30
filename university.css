@@ -1,0 +1,170 @@
+.university-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+/* Sidebar wrapper */
+.sidebar-container-wrapper {
+  width: 28%;
+  display: flex;
+  position: relative;
+}
+
+.close-btn {
+  display: none;
+}
+
+/* Burger and logo hidden on desktop */
+.burger-btn, .logo2 {
+  display: none;
+}
+
+.side-university {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-color: white;
+}
+
+h1 {
+  margin-top: 30px;
+  color: #333;
+  font-size: 26px;
+}
+.packunvi{
+  margin-top: 20px;
+  width: 95%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.univ {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+ 
+}
+
+.univ button {
+  width: 40%;
+  height: 15vh;
+  margin-bottom: 5%;
+  background-color: #44E5B2;
+  border: none;
+  border-radius: 15px;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;  
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.univ button:hover {
+  background-color: #2dc6a1;
+  transform: translateY(-3px);
+}
+
+.back-btn {
+  position: sticky;
+  bottom: 0px;
+  align-self: flex-start;
+  margin-left: 20px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #44E5B2;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #2dc6a1;
+}
+
+
+@media (max-width: 767px) {
+ 
+  .sidebar-container-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    max-width: 300px;
+    background: rgb(241, 241, 241);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+  .sidebar-container-wrapper.open {
+    transform: translateX(0);
+  }
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    color: #333;
+    z-index: 1000;
+  }
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #44E5B2;
+    padding: 10px;
+  }
+  .logo2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .burger-btn {
+    display: flex;
+    background: transparent;
+    border: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .burger-line {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+ 
+  .side-university > .header-container {
+    display: none;
+  }
+  .univ {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .univ button {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+  }
+  .back-btn {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+}

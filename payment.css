@@ -1,0 +1,181 @@
+.containerP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 2.5%;
+}
+.payment-container{
+    border: 0.5px solid gainsboro;
+    border-radius: 19px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.logo{
+    height: 13vh;
+    width:7vw;
+    border-radius: 50%;
+    border:0.5px solid gainsboro
+}
+.under{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.row {
+  position: relative;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input.txt {
+  height: 25px;
+  width: 258px;
+  border: 2px solid #44E5B2;
+  border-radius: 19px;
+  font-size: 15px;
+  padding: 10px 12px;
+  background-color: white;
+  text-align: left;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: #333;
+  background-color: transparent;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Move label to border line on focus or input */
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  background-color: white;
+  padding: 0 6px;
+  z-index: 1;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload{
+    height: 5vh;
+    border: 1px dashed gainsboro;
+}
+.preview-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.upload-label {
+  cursor: pointer;
+}
+
+.signupbtn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: not-allowed;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.signupbtn.enabled{
+  background-color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .containerP {
+    margin-top: 0;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .payment-container {
+    width: 75%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .under {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  input.txt {
+    width: 100%;
+  }
+
+  .preview-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .signupbtn {
+    width: 35%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  input.txt {
+    font-size: 14px;
+  }
+
+  .preview-img {
+    width: 130px;
+    height: 130px;
+  }
+}
