@@ -1,0 +1,247 @@
+.question-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #f9f9f9;
+}
+
+.side-question {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+}
+main{
+    height: 100vh;
+}
+
+.main-content.with-shadow {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: -40px;
+  width: 85%;
+  height: fit-content;
+  padding: 30px 40px;
+}
+
+
+.page-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.question-block {
+  margin-bottom: 30px;
+}
+
+.question-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.choices {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.choice:hover {
+  background: #f0f0f0;
+}
+
+.choice.selected {
+  background: #e6f9f4;
+  border-color: #44E5B2;
+}
+
+.choice.correct {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.choice.incorrect {
+  background: #ffebee;
+  border-color: #f44336;
+}
+
+.custom-radio {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: relative;
+}
+
+.checked-dot {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  background: #44E5B2;
+  border-radius: 50%;
+}
+
+.description {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+.button-group{
+    display: flex;
+}
+.submit-btn{
+      background: #44E5B2;
+}
+.submit-btn, .save-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 24px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.save-btn{
+      background: black;
+}
+
+.submit-btn:hover {
+  background: #2dc6a1;
+}
+.save-btn:hover{
+    background-color: green;
+}
+
+.score {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.back-btn {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #44E5B2;
+  background-color: white;
+  cursor: pointer;
+  margin-left: -0%;
+  height: 10vh;
+}
+
+.back-btn:hover {
+  color: #2dc6a1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+
+    .sidebar-container-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    max-width: 300px;
+    background: rgb(241, 241, 241);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+  .sidebar-container-wrapper.open {
+    transform: translateX(0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .close-btn {
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  color: #333;
+  z-index: 1000;
+  }
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #44E5B2;
+    padding: 10px;
+  }
+  .logo2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    margin-right: 3%;
+  }
+  .burger-btn {
+    display: flex;
+    background: transparent;
+    border: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 5%;
+  }
+  .burger-line {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+  }
+
+  .side-question > .header-container {
+    display: none;
+  }
+.main-content.with-shadow {
+  padding: 20px;
+  margin: 0;
+  margin-left: 1%;
+  max-width: 95%;
+  width: 100%;
+  height: fit-content;
+  border-radius: 0;
+}
+
+  .question-text {
+    font-size: 16px;
+  }
+  .choice {
+    font-size: 15px;
+  }
+}

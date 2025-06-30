@@ -1,0 +1,23 @@
+.containerT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: 90vh;
+}
+.thankyou-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 35%;
+    margin-top: 1%;
+}
+.thankyou-container img{
+    height: 13vh;
+    width:7vw;
+    border-radius: 50%;
+    border:0.5px solid gainsboro
+}
