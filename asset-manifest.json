@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Alpha-Exam/static/css/main.1be68b7e.css",
+    "main.js": "/Alpha-Exam/static/js/main.0f8402dc.js",
+    "static/js/453.1b644387.chunk.js": "/Alpha-Exam/static/js/453.1b644387.chunk.js",
+    "static/media/logo.jpg": "/Alpha-Exam/static/media/logo.802aab950860a7d0ca9e.jpg",
+    "index.html": "/Alpha-Exam/index.html",
+    "main.1be68b7e.css.map": "/Alpha-Exam/static/css/main.1be68b7e.css.map",
+    "main.0f8402dc.js.map": "/Alpha-Exam/static/js/main.0f8402dc.js.map",
+    "453.1b644387.chunk.js.map": "/Alpha-Exam/static/js/453.1b644387.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1be68b7e.css",
+    "static/js/main.0f8402dc.js"
+  ]
+}
